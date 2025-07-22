@@ -38,7 +38,18 @@
 
 <body class="index-page">
 
-  <header id="header" class="header dark-background d-flex flex-column">
+  <header id="header" class="header dark-background d-flex flex-column"
+  style="
+    background: rgba(17,24,39,0.97);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.35), 0 1.5px 4px 0 rgba(0,0,0,0.10);
+    border-radius: 18px;
+    margin: 2px 0 2px 2px;
+    padding: 32px 24px 32px 24px;
+    backdrop-filter: blur(6px);
+    width: 800px;
+    min-width: 180px;
+    max-width: 295px;
+  ">
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <div class="profile-img">
@@ -85,7 +96,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
+        <h2 class="section-title-main" style="margin-left: 14px;">About</h2>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -127,7 +138,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
+        <h2 class="section-title-main" style="margin-left: 14px;">Portfolio</h2>
       </div><!-- End Section Title -->
       <div class="isotope-layout">
         <div class="row" data-aos="fade-up">
@@ -141,8 +152,21 @@
         </div>
         
         <div class="isotope-container">
+
+          <div class="isotope-item filter-fin filter-certif">
+            <div class="portfolio-wrap shadow-lg rounded-2xl border border-gray-300 bg-white hover:shadow-2xl transition" style="box-shadow:0 8px 32px 0 rgba(0,0,0,0.18),0 3px 8px 0 rgba(0,0,0,0.15);margin-bottom:24px;">
+              <img src="assets/img/portfolio/THESIS.png" class="img-fluid" alt="" style="object-fit:cover;width:100%;height:330px;object-position:70% center;">
+              <div class="portfolio-links">
+                <a href="thesis.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <p>Market Risk Forecasting: Traditional vs. Machine Learning Approaches</p>
+              </div>
+            </div>
+          </div>
+          
           <div class="isotope-item filter-certif filter-fin">
-            <div class="portfolio-wrap">
+            <div class="portfolio-wrap shadow-lg rounded-2xl border border-gray-300 bg-white hover:shadow-2xl transition" style="box-shadow:0 8px 32px 0 rgba(0,0,0,0.18),0 3px 8px 0 rgba(0,0,0,0.15);margin-bottom:24px;">
               <img src="assets/img/portfolio/Group+24.png" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="cfa_project.html" title="More Details"><i class="bx bx-link"></i></a>
@@ -155,19 +179,7 @@
           </div>
         
           <div class="isotope-item filter-fin">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/Paris Market Analysis.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a target="_blank" rel="noopener noreferrer" href="https://medium.com/p/fa300d663cb7/edit" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <p>Paris Real Estate Market Analysis</p>
-              </div>
-            </div>
-          </div>
-        
-          <div class="isotope-item filter-fin">
-            <div class="portfolio-wrap">
+            <div class="portfolio-wrap shadow-lg rounded-2xl border border-gray-300 bg-white hover:shadow-2xl transition" style="box-shadow:0 8px 32px 0 rgba(0,0,0,0.18),0 3px 8px 0 rgba(0,0,0,0.15);margin-bottom:24px;">
               <img src="assets/img/portfolio/DCA VS Lump SUM.png" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a target="_blank" rel="noopener noreferrer" href="DCA VS LUMP SUM VS VALUE AVERAGING.html"></i></a>
@@ -179,7 +191,7 @@
           </div>
         
           <div class="isotope-item filter-fin">
-            <div class="portfolio-wrap">
+            <div class="portfolio-wrap shadow-lg rounded-2xl border border-gray-300 bg-white hover:shadow-2xl transition" style="box-shadow:0 8px 32px 0 rgba(0,0,0,0.18),0 3px 8px 0 rgba(0,0,0,0.15);margin-bottom:24px;">
               <img src="assets/img/portfolio/Black Scholes Model Pricer.png" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a target="_blank" rel="noopener noreferrer" href="https://bs-model-pricer-cuv5hcv2jdmfmb38sfg728.streamlit.app/" title="More Details"><i class="bx bx-link"></i></a>
@@ -191,7 +203,7 @@
           </div>
         
           <div class="isotope-item filter-certif">
-            <div class="portfolio-wrap">
+            <div class="portfolio-wrap shadow-lg rounded-2xl border border-gray-300 bg-white hover:shadow-2xl transition" style="box-shadow:0 8px 32px 0 rgba(0,0,0,0.18),0 3px 8px 0 rgba(0,0,0,0.15);margin-bottom:24px;">
               <img src="assets/img/portfolio/Bloomberg market Concepts.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a target="_blank" rel="noopener noreferrer" href="https://portal.bloombergforeducation.com/certificates/vqHP1GBTj9JukY5XaJUWGTei" title="More Details"><i class="bx bx-link"></i></a>
@@ -201,46 +213,18 @@
               </div>
             </div>
           </div>
-        
           <div class="isotope-item filter-fin">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/VaR Software.png" class="img-fluid" alt="">
+            <div class="portfolio-wrap shadow-lg rounded-2xl border border-gray-300 bg-white hover:shadow-2xl transition" style="box-shadow:0 8px 32px 0 rgba(0,0,0,0.18),0 3px 8px 0 rgba(0,0,0,0.15);margin-bottom:24px;">
+              <img src="assets/img/portfolio/Paris Market Analysis.png" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a target="_blank" rel="noopener noreferrer" href="adad" title="More Details"><i class="bx bx-link"></i></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://medium.com/p/fa300d663cb7/edit" title="More Details"><i class="bx bx-link"></i></a>
               </div>
               <div class="portfolio-info">
-                <p>Value at Risk Software</p>
-              </div>
-            </div>
-          </div>
-        
-          <div class="isotope-item filter-fin filter-certif">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/THESIS.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-<<<<<<< HEAD
-                <a href="thesis.html" title="More Details"></a>
-=======
-                <a target="_blank" rel="noopener noreferrer" href="Crypto_tweets_analysis.html" title="More Details"><i class="bx bx-link"></i></a>
->>>>>>> 418c165cc58224e42bebeaaf24015db36defe401
-              </div>
-              <div class="portfolio-info">
-                <p>"Combining Machine Learning, Hybrid Models, and Real-Time Monitoring in Periods of Financial Stress"</p>
+                <p>Paris Real Estate Market Analysis</p>
               </div>
             </div>
           </div>
 
-          <div class="isotope-item filter-fin">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/ML in Factor Investing.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a target="_blank" rel="noopener noreferrer" href="Crypto_tweets_analysis.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <p>"Machine Learning in Factor Investing"</p>
-              </div>
-            </div>
-          </div>
         
         </div>
       </div>
@@ -251,7 +235,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Resume</h2>
+          <h2 class="section-title-main">Resume</h2>
         </div>
         <div class="row">
           <div class="col-lg-6" data-aos="fade-up">

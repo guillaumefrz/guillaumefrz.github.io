@@ -1,76 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CFA Project - Portfolio</title>
-  
-  <!-- Réutilisez les mêmes liens CSS que votre page principale -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/css/main.css" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', Arial, sans-serif; }
+  </style>
 </head>
-
-<body class="project-page">
-  <main class="main">
-    <section class="project-details section dark-background">
-      <div class="container">
-        <div class="project-card light-background">
-          <h2 class="project-title">CFA Equity Research Challenge 2024</h2>
-          
-          <div class="project-image">
-            <img src="assets/img/portfolio/Group+24.png" class="img-fluid" alt="CFA Project">
-          </div>
-          
-          <div class="project-description">
-            <p>As a finalist in the CFA Equity Research Challenge 2024 France, I worked with a team to prepare a comprehensive buy-side initiating coverage report on Amundi. Our analysis included detailed financial modeling, valuation, and strategic recommendations.</p>
-            
-            <p>This project was conducted under the supervision of EMLYON Business School, where we developed a thorough equity research report on Amundi, France's largest asset management company. Our work involved in-depth financial analysis, industry research, and valuation methodologies to provide a well-founded investment recommendation.</p>
-
-            <div class="team-section">
-              <h4>Team Members:</h4>
-              <ul>
-                <li>Philip VAN DYK</li>
-                <li>Augustin PICOT</li>
-                <li>Kamran MIRZABAYLI</li>
-                <li>Marwan BELAAZIZ</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="project-resources">
-            <h3>Project Resources</h3>
-            
-            <div class="resource-links">
-              <a href="/assets/PDF/Amundi Presentation - CFA Research Challenge.pdf" class="btn-primary" download>
-                <i class="bi bi-download me-2"></i>Download Presentation
-              </a>
-              
-              <a href="/assets/PDF/TEAM-M.CFA-CHALLENGE.AMUNDI.2024.pdf.Final.pdf" class="btn-primary" download>
-                <i class="bi bi-download me-2"></i>Download Report
-              </a>
-              
-              <a href="https://credentials.cfainstitute.org/ca9dac22-c8bd-49e1-9665-a7020bd00a10#acc.ghxvQ8uO" class="btn-secondary">
-                <i class="bi bi-award me-2"></i>View Certificate
-              </a>
-            </div>
-          </div>
-
-          <div class="back-section">
-            <a href="index.html" class="btn-back">
-              <i class="bi bi-arrow-left me-2"></i>Back to Portfolio
-            </a>
+<body class="bg-gray-900 min-h-screen flex flex-col items-center px-4">
+  <main class="w-full max-w-3xl mx-auto mt-10 mb-12">
+    <!-- Title -->
+    <h1 class="text-3xl md:text-4xl font-bold text-blue-400 mb-6 text-center">CFA Equity Research Challenge 2024</h1>
+    
+    <!-- Project Card -->
+    <section class="bg-gray-800 rounded-xl shadow p-6 mb-8">
+      <div class="flex flex-col md:flex-row gap-6 items-center">
+        <img src="assets/img/portfolio/Group+24.png" alt="CFA Project" class="w-full md:w-1/3 rounded-lg shadow mb-4 md:mb-0">
+        <div class="flex-1">
+          <p class="text-gray-200 text-lg mb-4">
+            As a finalist in the CFA Equity Research Challenge 2024 France, I worked with a team to prepare a comprehensive buy-side initiating coverage report on Amundi. Our analysis included detailed financial modeling, valuation, and strategic recommendations.
+          </p>
+          <p class="text-gray-400 text-sm mb-4">
+            This project was conducted under the supervision of EMLYON Business School, where we developed a thorough equity research report on Amundi, France's largest asset management company. Our work involved in-depth financial analysis, industry research, and valuation methodologies to provide a well-founded investment recommendation.
+          </p>
+          <div class="mb-4">
+            <h4 class="text-blue-300 font-semibold mb-1">Team Members:</h4>
+            <ul class="list-disc list-inside text-gray-300 text-sm">
+              <li>Guillaume Friez</li>
+              <li>Philip Van Dyk</li>
+              <li>Augustin Picot</li>
+              <li>Kamran Mirzabayli</li>
+              <li>Marwan Belaaziz</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
-  </main>
 
-  <!-- Scripts -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/js/main.js"></script>
+    <!-- Resources Section -->
+    <section class="flex flex-col md:flex-row gap-6 justify-center mb-8">
+      <a href="/assets/PDF/Amundi Presentation - CFA Research Challenge.pdf" download class="flex-1 bg-blue-900 border border-blue-700 rounded-lg p-5 flex flex-col items-center hover:bg-blue-800 transition shadow group mb-4 md:mb-0">
+        <span class="text-3xl mb-2">📊</span>
+        <span class="font-semibold text-blue-100 mb-1 text-center">Download Presentation</span>
+        <span class="text-xs text-blue-200 mb-2">PDF</span>
+        <span class="inline-block mt-auto px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-800 transition">Download</span>
+      </a>
+      <a href="/assets/PDF/TEAM-M.CFA-CHALLENGE.AMUNDI.2024.pdf.Final.pdf" download class="flex-1 bg-gray-800 border border-gray-700 rounded-lg p-5 flex flex-col items-center hover:bg-gray-700 transition shadow group">
+        <span class="text-3xl mb-2">📄</span>
+        <span class="font-semibold text-gray-100 mb-1 text-center">Download Full Report</span>
+        <span class="text-xs text-gray-300 mb-2">PDF</span>
+        <span class="inline-block mt-auto px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-800 transition">Download</span>
+      </a>
+      <a href="https://credentials.cfainstitute.org/ca9dac22-c8bd-49e1-9665-a7020bd00a10#acc.ghxvQ8uO" target="_blank" class="flex-1 bg-gray-900 border border-blue-900 rounded-lg p-5 flex flex-col items-center hover:bg-blue-950 transition shadow group mt-4 md:mt-0">
+        <span class="text-3xl mb-2">🏅</span>
+        <span class="font-semibold text-blue-200 mb-1 text-center">View Certificate</span>
+        <span class="text-xs text-blue-300 mb-2">External Link</span>
+        <span class="inline-block mt-auto px-4 py-2 bg-blue-800 text-white rounded hover:bg-blue-900 transition">Open</span>
+      </a>
+    </section>
+
+    <!-- Back Button -->
+    <section class="flex justify-center">
+      <a href="index.html" class="flex items-center gap-2 px-6 py-3 bg-blue-700 text-white font-semibold rounded-lg shadow hover:bg-blue-800 transition text-lg">
+        <span class="text-2xl">←</span>
+        Back to Portfolio
+      </a>
+    </section>
+  </main>
 </body>
 </html> 

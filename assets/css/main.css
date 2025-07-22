@@ -361,6 +361,18 @@ h6 {
   background-color: rgba(33, 37, 41, 0.03);
 }
 
+/* Harmonisation du menu latéral pour alignement parfait */
+.navmenu ul li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 0.5em;
+}
+.navicon {
+  min-width: 24px;
+  text-align: center;
+}
+
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
